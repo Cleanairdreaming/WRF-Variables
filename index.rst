@@ -299,6 +299,8 @@ float32 T(Time, bottom_top, south_north, west_east)
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+扰动位温（theta-t0）。
+
 HFX_FORCE
 -----------------------------
 ::
@@ -313,6 +315,8 @@ float32 HFX_FORCE(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+SCM理想表面感热（显热）通量，W/m2。
 
 LH_FORCE
 -----------------------------
@@ -329,6 +333,8 @@ float32 LH_FORCE(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+SCM理想表面潜热通量，W/m2。
+
 TSK_FORCE
 -----------------------------
 ::
@@ -343,6 +349,8 @@ float32 TSK_FORCE(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+SCM理想表面体感温度，W/m2。
 
 HFX_FORCE_TEND
 -----------------------------
@@ -359,6 +367,8 @@ float32 HFX_FORCE_TEND(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+SCM理想表面显热通量趋势，W m-2 s-1。
+
 LH_FORCE_TEND
 -----------------------------
 ::
@@ -374,6 +384,8 @@ float32 LH_FORCE_TEND(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+SCM理想表面潜热通量趋势，W m-2 s-1。
+
 TSK_FORCE_TEND
 -----------------------------
 ::
@@ -388,6 +400,8 @@ float32 TSK_FORCE_TEND(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+SCM理想表面体感温度趋势，W m-2 s-1。
 
 MU
 -----------------------------
@@ -405,6 +419,8 @@ float32 MU(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+柱内扰动干空气质量，Pa。
+
 MUB
 -----------------------------
 ::
@@ -420,6 +436,8 @@ float32 MUB(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+柱内基准态干空气质量，Pa。
 
 NEST_POS
 -----------------------------
@@ -437,6 +455,8 @@ float32 NEST_POS(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+作多层嵌套时粗（母）网格位置。
+
 P
 -----------------------------
 ::
@@ -452,6 +472,8 @@ float32 P(Time, bottom_top, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+扰动气压，Pa。
 
 PB
 -----------------------------
@@ -469,6 +491,8 @@ float32 PB(Time, bottom_top, south_north, west_east)
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+基准态气压，Pa。
+
 FNM
 -----------------------------
 ::
@@ -483,6 +507,8 @@ float32 FNM(Time, bottom_top)
   | unlimited dimensions: Time
   | current shape = (1, 29)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+作垂直方向展开时上层权重。
 
 FNP
 -----------------------------
@@ -499,6 +525,8 @@ float32 FNP(Time, bottom_top)
   | current shape = (1, 29)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+作垂直方向展开时下层权重。
+
 RDNW
 -----------------------------
 ::
@@ -513,6 +541,8 @@ float32 RDNW(Time, bottom_top)
   | unlimited dimensions: Time
   | current shape = (1, 29)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+1除以整层（w层）间eta值之差。
 
 RDN
 -----------------------------
@@ -529,6 +559,8 @@ float32 RDN(Time, bottom_top)
   | current shape = (1, 29)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+1除以半层（质量层）间eta值之差。
+
 DNW
 -----------------------------
 ::
@@ -543,6 +575,8 @@ float32 DNW(Time, bottom_top)
   | unlimited dimensions: Time
   | current shape = (1, 29)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+整层（w层）间eta值之差。
 
 DN
 -----------------------------
@@ -559,6 +593,8 @@ float32 DN(Time, bottom_top)
   | current shape = (1, 29)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+半层（质量层）间eta值之差。
+
 CFN
 -----------------------------
 ::
@@ -573,6 +609,8 @@ float32 CFN(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+外推常数。
 
 CFN1
 -----------------------------
@@ -589,6 +627,8 @@ float32 CFN1(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+外推常数1。
+
 THIS_IS_AN_IDEAL_RUN
 -----------------------------
 ::
@@ -603,6 +643,8 @@ int32 THIS_IS_AN_IDEAL_RUN(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of -2147483647 used
+
+这是一个ARW理想计算。
 
 P_HYD
 -----------------------------
@@ -620,6 +662,8 @@ float32 P_HYD(Time, bottom_top, south_north, west_east)
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+静压，Pa。
+
 Q2
 -----------------------------
 ::
@@ -635,6 +679,8 @@ float32 Q2(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地面上2m高度的比湿，kg kg-1。
 
 T2
 -----------------------------
@@ -652,6 +698,8 @@ float32 T2(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地面2m温度，K。
+
 TH2
 -----------------------------
 ::
@@ -667,6 +715,8 @@ float32 TH2(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地面上2m高度的位温，K。
 
 PSFC
 -----------------------------
@@ -684,6 +734,8 @@ float32 PSFC(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地面气压，Pa。
+
 U10
 -----------------------------
 ::
@@ -699,6 +751,8 @@ float32 U10(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地面10m的U风，m/s。
 
 V10
 -----------------------------
@@ -716,6 +770,8 @@ float32 V10(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地面10m的V风，m/s。
+
 RDX
 -----------------------------
 ::
@@ -730,6 +786,8 @@ float32 RDX(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+1除以x方向网格距
 
 RDY
 -----------------------------
@@ -746,6 +804,8 @@ float32 RDY(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+1除以y方向网格距
+
 RESM
 -----------------------------
 ::
@@ -760,6 +820,8 @@ float32 RESM(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+对小时间步长时的时间权重常数。
 
 ZETATOP
 -----------------------------
@@ -776,6 +838,8 @@ float32 ZETATOP(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+模式大气层顶的eta值。
+
 CF1
 -----------------------------
 ::
@@ -790,6 +854,8 @@ float32 CF1(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+2阶外推常数1。
 
 CF2
 -----------------------------
@@ -806,6 +872,8 @@ float32 CF2(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+2阶外推常数2。
+
 CF3
 -----------------------------
 ::
@@ -820,6 +888,8 @@ float32 CF3(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+2阶外推常数3。
 
 ITIMESTEP
 -----------------------------
@@ -836,6 +906,8 @@ int32 ITIMESTEP(Time)
   | current shape = (1,)
   | filling on, default _FillValue of -2147483647 used
 
+时间步长计数。
+
 XTIME
 -----------------------------
 ::
@@ -850,6 +922,8 @@ float32 XTIME(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+已经模拟时间的长度。
 
 QVAPOR
 -----------------------------
@@ -867,6 +941,8 @@ float32 QVAPOR(Time, bottom_top, south_north, west_east)
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+水汽混合比，kg kg-1。
+
 QCLOUD
 -----------------------------
 ::
@@ -882,6 +958,8 @@ float32 QCLOUD(Time, bottom_top, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+云水混合比，kg kg-1。
 
 QRAIN
 -----------------------------
@@ -899,6 +977,8 @@ float32 QRAIN(Time, bottom_top, south_north, west_east)
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+雨水混合比，kg kg-1。
+
 SHDMAX
 -----------------------------
 ::
@@ -914,6 +994,8 @@ float32 SHDMAX(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+年最大植被比例。
 
 SHDMIN
 -----------------------------
@@ -931,6 +1013,8 @@ float32 SHDMIN(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+年最小植被比例。
+
 SNOALB
 -----------------------------
 ::
@@ -946,6 +1030,8 @@ float32 SNOALB(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+年最大雪反照率，百分数。
 
 TSLB
 -----------------------------
@@ -963,6 +1049,8 @@ float32 TSLB(Time, soil_layers_stag, south_north, west_east)
   | current shape = (1, 4, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+各层土壤温度，K。
+
 SMOIS
 -----------------------------
 ::
@@ -978,6 +1066,8 @@ float32 SMOIS(Time, soil_layers_stag, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 4, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+各层土壤湿度，m3 m-3。
 
 SH2O
 -----------------------------
@@ -995,6 +1085,8 @@ float32 SH2O(Time, soil_layers_stag, south_north, west_east)
   | current shape = (1, 4, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+各层土壤液态水含量，m3 m-3。
+
 SMCREL
 -----------------------------
 ::
@@ -1010,6 +1102,8 @@ float32 SMCREL(Time, soil_layers_stag, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 4, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+各层相对土壤湿度。
 
 SEAICE
 -----------------------------
@@ -1027,6 +1121,8 @@ float32 SEAICE(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+海冰标志。
+
 XICEM
 -----------------------------
 ::
@@ -1042,6 +1138,8 @@ float32 XICEM(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+上一步时的海冰标志。
 
 SFROFF
 -----------------------------
@@ -1059,6 +1157,8 @@ float32 SFROFF(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地表径流，mm。
+
 UDROFF
 -----------------------------
 ::
@@ -1074,6 +1174,8 @@ float32 UDROFF(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地下径流，mm。
 
 IVGTYP
 -----------------------------
@@ -1091,6 +1193,8 @@ int32 IVGTYP(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of -2147483647 used
 
+占主导的植被种类。
+
 ISLTYP
 -----------------------------
 ::
@@ -1106,6 +1210,8 @@ int32 ISLTYP(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of -2147483647 used
+
+占主导的土壤种类。
 
 VEGFRA
 -----------------------------
@@ -1123,6 +1229,8 @@ float32 VEGFRA(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+植被比例。
+
 GRDFLX
 -----------------------------
 ::
@@ -1138,6 +1246,8 @@ float32 GRDFLX(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地面热通量，W m-2。
 
 ACGRDFLX
 -----------------------------
@@ -1155,6 +1265,8 @@ float32 ACGRDFLX(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+累计地表热通量，J m-2。
+
 ACSNOM
 -----------------------------
 ::
@@ -1170,6 +1282,8 @@ float32 ACSNOM(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+累计融雪，kg m-2。
 
 SNOW
 -----------------------------
@@ -1187,6 +1301,8 @@ float32 SNOW(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+雪水当量，kg m-2。
+
 SNOWH
 -----------------------------
 ::
@@ -1202,6 +1318,8 @@ float32 SNOWH(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+物理雪厚度，m。
 
 CANWAT
 -----------------------------
@@ -1219,6 +1337,8 @@ float32 CANWAT(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+冠层中的水，kg m-2。
+
 SSTSK
 -----------------------------
 ::
@@ -1234,6 +1354,8 @@ float32 SSTSK(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+海面体感温度，K。
 
 COSZEN
 -----------------------------
@@ -1251,6 +1373,8 @@ float32 COSZEN(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+太阳天顶角cos值。
+
 LAI
 -----------------------------
 ::
@@ -1266,6 +1390,8 @@ float32 LAI(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+叶面积指数，m-2/m-2。
 
 VAR
 -----------------------------
@@ -1283,6 +1409,8 @@ float32 VAR(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地形变异。
+
 MAPFAC_M
 -----------------------------
 ::
@@ -1298,6 +1426,8 @@ float32 MAPFAC_M(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+质量格点处的地图比例系数。
 
 MAPFAC_U
 -----------------------------
@@ -1315,6 +1445,8 @@ float32 MAPFAC_U(Time, south_north, west_east_stag)
   | current shape = (1, 21, 22)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+u-格点处的地图比例系数。
+
 MAPFAC_V
 -----------------------------
 ::
@@ -1330,6 +1462,8 @@ float32 MAPFAC_V(Time, south_north_stag, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 22, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+v-格点处的地图比例系数
 
 MAPFAC_MX
 -----------------------------
@@ -1347,6 +1481,8 @@ float32 MAPFAC_MX(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+x方向上质量格点处的地图比例系数
+
 MAPFAC_MY
 -----------------------------
 ::
@@ -1362,6 +1498,8 @@ float32 MAPFAC_MY(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+y方向上质量格点处的地图比例系数。
 
 MAPFAC_UX
 -----------------------------
@@ -1379,6 +1517,8 @@ float32 MAPFAC_UX(Time, south_north, west_east_stag)
   | current shape = (1, 21, 22)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+x方向上u-格点处的地图比例系数。
+
 MAPFAC_UY
 -----------------------------
 ::
@@ -1394,6 +1534,8 @@ float32 MAPFAC_UY(Time, south_north, west_east_stag)
   | unlimited dimensions: Time
   | current shape = (1, 21, 22)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+y方向上u-格点处的地图比例系数。
 
 MAPFAC_VX
 -----------------------------
@@ -1411,6 +1553,8 @@ float32 MAPFAC_VX(Time, south_north_stag, west_east)
   | current shape = (1, 22, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+x方向上v-格点处的地图比例系数。
+
 MF_VX_INV
 -----------------------------
 ::
@@ -1426,6 +1570,8 @@ float32 MF_VX_INV(Time, south_north_stag, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 22, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+1除以x方向上v-格点处的地图比例系数。
 
 MAPFAC_VY
 -----------------------------
@@ -1443,6 +1589,8 @@ float32 MAPFAC_VY(Time, south_north_stag, west_east)
   | current shape = (1, 22, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+y方向上v-格点处的地图比例系数。
+
 F
 -----------------------------
 ::
@@ -1458,6 +1606,8 @@ float32 F(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+科氏力中sin(Ω)的部分，Ω为纬度。
 
 E
 -----------------------------
@@ -1475,6 +1625,8 @@ float32 E(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+科氏力中cos(Ω)的部分，Ω为纬度。
+
 SINALPHA
 -----------------------------
 ::
@@ -1490,6 +1642,8 @@ float32 SINALPHA(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+局地sin（地图旋转角）。
 
 COSALPHA
 -----------------------------
@@ -1507,6 +1661,8 @@ float32 COSALPHA(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+局地cos（地图旋转角）。
+
 HGT
 -----------------------------
 ::
@@ -1522,6 +1678,8 @@ float32 HGT(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地形高度，m。
 
 TSK
 -----------------------------
@@ -1539,6 +1697,8 @@ float32 TSK(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地表体感温度，K。
+
 P_TOP
 -----------------------------
 ::
@@ -1553,6 +1713,8 @@ float32 P_TOP(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+模式顶的气压，Pa。
 
 T00
 -----------------------------
@@ -1569,6 +1731,8 @@ float32 T00(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+基准态温度，K。
+
 P00
 -----------------------------
 ::
@@ -1583,6 +1747,8 @@ float32 P00(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+基准态压力，Pa。
 
 TLP
 -----------------------------
@@ -1599,6 +1765,8 @@ float32 TLP(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+基准态温度直减率。
+
 TISO
 -----------------------------
 ::
@@ -1613,6 +1781,8 @@ float32 TISO(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+基准态T转变成常数时的温度，K。
 
 TLP_STRAT
 -----------------------------
@@ -1629,6 +1799,8 @@ float32 TLP_STRAT(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+平流层基准态温度垂直递减率，K。
+
 P_STRAT
 -----------------------------
 ::
@@ -1643,6 +1815,8 @@ float32 P_STRAT(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+平流层底部基准态压力，Pa。
 
 MAX_MSTFX
 -----------------------------
@@ -1659,6 +1833,8 @@ float32 MAX_MSTFX(Time)
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+区域内的最大地图比例系数。
+
 MAX_MSTFY
 -----------------------------
 ::
@@ -1673,6 +1849,8 @@ float32 MAX_MSTFY(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+区域内的最大地图比例系数。
 
 RAINC
 -----------------------------
@@ -1690,6 +1868,8 @@ float32 RAINC(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+累积的积云对流降水，mm。
+
 RAINSH
 -----------------------------
 ::
@@ -1705,6 +1885,8 @@ float32 RAINSH(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+累积浅积云降水 ，mm。
 
 RAINNC
 -----------------------------
@@ -1722,6 +1904,8 @@ float32 RAINNC(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+累积的格点降水，mm。
+
 SNOWNC
 -----------------------------
 ::
@@ -1737,6 +1921,8 @@ float32 SNOWNC(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+累积的格点降雪和冰量，mm。
 
 GRAUPELNC
 -----------------------------
@@ -1754,6 +1940,8 @@ float32 GRAUPELNC(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+累积的格点降雪丸量，mm。
+
 HAILNC
 -----------------------------
 ::
@@ -1769,6 +1957,8 @@ float32 HAILNC(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+累积总网格尺度冰雹，mm。
 
 CLDFRA
 -----------------------------
@@ -1786,6 +1976,8 @@ float32 CLDFRA(Time, bottom_top, south_north, west_east)
   | current shape = (1, 29, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+云份数。
+
 SWDOWN
 -----------------------------
 ::
@@ -1801,6 +1993,8 @@ float32 SWDOWN(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地表处的向下短波辐射通量，W m-2。
 
 GLW
 -----------------------------
@@ -1818,6 +2012,8 @@ float32 GLW(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地表处的向下长波辐射通量，W m-2。
+
 SWNORM
 -----------------------------
 ::
@@ -1833,6 +2029,8 @@ float32 SWNORM(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地表正常短波通量（取决于坡度）。
 
 DIFFUSE_FRAC
 -----------------------------
@@ -1850,6 +2048,8 @@ float32 DIFFUSE_FRAC(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+表面短波辐射的漫射份数。
+
 OLR
 -----------------------------
 ::
@@ -1865,6 +2065,8 @@ float32 OLR(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+TOA处的向上长波辐射通量，W m-2。
 
 XLAT_U
 -----------------------------
@@ -1882,6 +2084,8 @@ float32 XLAT_U(Time, south_north, west_east_stag)
   | current shape = (1, 21, 22)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+U-格点的纬度（南半球为负值）。
+
 XLONG_U
 -----------------------------
 ::
@@ -1897,6 +2101,8 @@ float32 XLONG_U(Time, south_north, west_east_stag)
   | unlimited dimensions: Time
   | current shape = (1, 21, 22)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+U-格点的经度（西半球为负值）。
 
 XLAT_V
 -----------------------------
@@ -1914,6 +2120,8 @@ float32 XLAT_V(Time, south_north_stag, west_east)
   | current shape = (1, 22, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+V-格点的纬度（南半球为负值）。
+
 XLONG_V
 -----------------------------
 ::
@@ -1929,6 +2137,8 @@ float32 XLONG_V(Time, south_north_stag, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 22, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+V-格点的经度（西半球为负值）。
 
 ALBEDO
 -----------------------------
@@ -1946,6 +2156,8 @@ float32 ALBEDO(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+反照率。
+
 CLAT
 -----------------------------
 ::
@@ -1961,6 +2173,8 @@ float32 CLAT(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+计算网格纬度，南为负。
 
 ALBBCK
 -----------------------------
@@ -1978,6 +2192,8 @@ float32 ALBBCK(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+背景反照率。
+
 EMISS
 -----------------------------
 ::
@@ -1993,6 +2209,8 @@ float32 EMISS(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地面发射率。
 
 NOAHRES
 -----------------------------
@@ -2010,6 +2228,8 @@ float32 NOAHRES(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+NOAH地表能量收支的剩余，W/m2。
+
 TMN
 -----------------------------
 ::
@@ -2025,6 +2245,8 @@ float32 TMN(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+更低边界处的土壤温度，K。
 
 XLAND
 -----------------------------
@@ -2042,6 +2264,8 @@ float32 XLAND(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+陆面标识（1是陆地，2是水体）。
+
 UST
 -----------------------------
 ::
@@ -2057,6 +2281,8 @@ float32 UST(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+相似性理论中的摩擦速度，m s-1。
 
 PBLH
 -----------------------------
@@ -2074,6 +2300,8 @@ float32 PBLH(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+行星边界层高度，m。
+
 HFX
 -----------------------------
 ::
@@ -2089,6 +2317,8 @@ float32 HFX(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地表面处向上的热量通量（感热通量），W m-2。
 
 QFX
 -----------------------------
@@ -2106,6 +2336,8 @@ float32 QFX(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地表面处向上的水汽通量，kg m-2 s-1。
+
 LH
 -----------------------------
 ::
@@ -2121,6 +2353,8 @@ float32 LH(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地表面处的潜热通量，W m-2。
 
 ACHFX
 -----------------------------
@@ -2138,6 +2372,8 @@ float32 ACHFX(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+地面累积向上热通量，J m-2。
+
 ACLHF
 -----------------------------
 ::
@@ -2153,6 +2389,8 @@ float32 ACLHF(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+地表累计向上潜热通量，J m-2。
 
 SNOWC
 -----------------------------
@@ -2170,6 +2408,8 @@ float32 SNOWC(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+雪盖标志（1是有雪）。
+
 SR
 -----------------------------
 ::
@@ -2186,6 +2426,8 @@ float32 SR(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+冻结降水比例。
+
 SAVE_TOPO_FROM_REAL
 -----------------------------
 ::
@@ -2200,6 +2442,8 @@ int32 SAVE_TOPO_FROM_REAL(Time)
   | unlimited dimensions: Time
   | current shape = (1,)
   | filling on, default _FillValue of -2147483647 used
+
+TOPO参数来源，1代表real中的原始topo参数，0代表topo被WRF修改。
 
 ISEEDARR_RAND_PERTURB
 -----------------------------
@@ -2216,6 +2460,8 @@ int32 ISEEDARR_RAND_PERTURB(Time, bottom_top)
   | current shape = (1, 29)
   | filling on, default _FillValue of -2147483647 used
 
+Array，保存重启种子，RAND_PERT。
+
 ISEEDARR_SPPT
 -----------------------------
 ::
@@ -2231,6 +2477,8 @@ int32 ISEEDARR_SPPT(Time, bottom_top)
   | current shape = (1, 29)
   | filling on, default _FillValue of -2147483647 used
 
+Array，保存重启种子，SPPT。
+
 ISEEDARR_SKEBS
 -----------------------------
 ::
@@ -2245,6 +2493,8 @@ int32 ISEEDARR_SKEBS(Time, bottom_top)
   | unlimited dimensions: Time
   | current shape = (1, 29)
   | filling on, default _FillValue of -2147483647 used
+
+Array，保存重启种子，SKEBS。
 
 LANDMASK
 -----------------------------
@@ -2262,6 +2512,8 @@ float32 LANDMASK(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+路面类型，（1代表陆地，0代表水面）。
+
 LAKEMASK
 -----------------------------
 ::
@@ -2277,6 +2529,8 @@ float32 LAKEMASK(Time, south_north, west_east)
   | unlimited dimensions: Time
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
+
+湖面标识，（1代表湖，0代表非湖）。
 
 SST
 -----------------------------
@@ -2294,6 +2548,8 @@ float32 SST(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
+海平面温度，K。
+
 SST_INPUT
 -----------------------------
 ::
@@ -2310,4 +2566,4 @@ float32 SST_INPUT(Time, south_north, west_east)
   | current shape = (1, 21, 21)
   | filling on, default _FillValue of 9.969209968386869e+36 used
 
-
+海平面温度，从WRFLOW输入。
